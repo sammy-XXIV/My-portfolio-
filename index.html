@@ -3,7 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAMMY — Builder</title>
+  <title>SAMMY — Solo Builder · Crypto, AI & Web</title>
+  <meta name="description" content="Sammy — solo builder working where crypto, AI, and the web overlap. Full-stack products, Telegram bots, AI agents, and bug bounties." />
+  <meta name="author" content="Sammy" />
+  <meta name="theme-color" content="#080808" />
+  <link rel="canonical" href="https://sammyxxiv.xyz/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SAMMY" />
+  <meta property="og:title" content="SAMMY — Solo Builder · Crypto, AI & Web" />
+  <meta property="og:description" content="Full-stack products, Telegram bots, AI agents, and bug bounties. If it involves crypto, AI, or code — I'm probably already building something on it." />
+  <meta property="og:url" content="https://sammyxxiv.xyz/" />
+  <meta property="og:image" content="https://sammyxxiv.xyz/images/ichigo.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@sammyXXIV" />
+  <meta name="twitter:creator" content="@sammyXXIV" />
+  <meta name="twitter:title" content="SAMMY — Solo Builder · Crypto, AI & Web" />
+  <meta name="twitter:description" content="Full-stack products, Telegram bots, AI agents, and bug bounties." />
+  <meta name="twitter:image" content="https://sammyxxiv.xyz/images/ichigo.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23080808'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='20' font-weight='700' fill='%23FF8C42' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Syne:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -382,16 +405,24 @@
 
     /* FOOTER */
     footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
       text-align: center;
-      padding: 28px 40px;
+      padding: 34px 40px;
       border-top: 1px solid var(--line);
       font-family: 'Syne', sans-serif;
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
       color: var(--muted);
     }
-    footer span { color: var(--orange); }
+    footer .fx { color: var(--orange); }
+    footer .dot { color: rgba(255,255,255,0.12); }
+    footer a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--orange); }
 
     /* ANIMATIONS */
     @keyframes fadeUp {
@@ -436,10 +467,10 @@
 <div class="page">
 
   <!-- HERO -->
-  <div class="hero">
+  <div class="hero" id="top">
     <div class="hero-avatar"><img src="images/ichigo.jpg" alt="Sammy" /></div>
     <div class="status-pill"><span class="status-dot"></span>Open to Work</div>
-    <div class="hero-eyebrow">Solo Builder · KOL · Content Creator</div>
+    <div class="hero-eyebrow">Solo Builder · Bots &amp; Tools · Bug Bounties</div>
     <h1 class="hero-name">SAM<span class="hl">MY</span></h1>
     <p class="hero-sub">Building at the edge of crypto, AI, and the web.</p>
 
@@ -458,8 +489,8 @@
       <h2 class="section-title">About</h2>
     </div>
     <div class="about-text reveal reveal-delay-1">
-      <p>I'm a solo builder working at the intersection of <strong>crypto, AI, and the web</strong>. I build full-stack products — from DeFi trading tools to Telegram bots and AI agents.</p>
-      <p>I've worked as an <strong>Ambassador and Community Manager</strong> in Web3 ecosystems, and I run and own an active Telegram group.</p>
+      <p>I'm a solo builder working where <strong>crypto, AI, and the web</strong> overlap. I ship full-stack products end to end — DeFi trading tools, Telegram bots, AI agents, and the small utilities that quietly take the friction out of everyday work.</p>
+      <p>Most of what I build starts as a problem I hit myself. I like <strong>automating the boring parts</strong>, wiring in AI where it actually earns its place, and <strong>hunting bugs</strong> in other people's code when there's a bounty on the line.</p>
       <p>If it involves crypto, AI, or code — I'm probably already building something on it.</p>
     </div>
     <div class="skills-row reveal reveal-delay-2">
@@ -468,58 +499,7 @@
       <div class="skill-pill">DeFi Tools</div>
       <div class="skill-pill">Telegram Bots</div>
       <div class="skill-pill">Crypto Trading</div>
-      <div class="skill-pill">KOL & Community</div>
-      <div class="skill-pill">Content Creation</div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="reveal">
-      <div class="label">What I've built</div>
-      <h2 class="section-title">Projects</h2>
-    </div>
-
-    <div class="projects-stack">
-
-      <div class="project-card reveal reveal-delay-1">
-        <div>
-          <div class="project-name">CIPHER</div>
-          <p class="project-desc">A full-stack AI crypto trading web app. Generates LONG/SHORT signals using RSI, MACD, and ATR with Supabase-backed persistence, a MEXC scanner, Scalp Mode, Safe/Degen toggle, token grading, and a pre-pump detector. Built and deployed solo.</p>
-          <div class="project-tags">
-            <span class="tag">AI</span>
-            <span class="tag">Crypto</span>
-            <span class="tag">Trading</span>
-            <span class="tag">Flask</span>
-            <span class="tag">Supabase</span>
-          </div>
-        </div>
-        <div class="project-cta">
-          <div class="project-number">01</div>
-          <a href="https://tradewithcipher.online" target="_blank" class="project-link">Live App →</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal reveal-delay-2">
-        <div>
-          <div class="project-name">SAGE</div>
-          <p class="project-desc">An AI DeFi agent built for the STON.fi hackathon on TON. Handles swaps, limit orders via per-user agent wallets, TON Stakers staking, staking comparison, yield calculation, portfolio tracking, and farming — all through a Telegram bot interface.</p>
-          <div class="project-tags">
-            <span class="tag">TON</span>
-            <span class="tag">DeFi</span>
-            <span class="tag">AI Agent</span>
-            <span class="tag">Telegram</span>
-            <span class="tag">STON.fi</span>
-          </div>
-        </div>
-        <div class="project-cta">
-          <div class="project-number">02</div>
-          <a href="https://t.me/sagedefibot" target="_blank" class="project-link">Try Bot →</a>
-        </div>
-      </div>
-
+      <div class="skill-pill">Bug Bounties</div>
     </div>
   </section>
 
@@ -530,18 +510,24 @@
     <div class="contact-wrap reveal">
       <div class="label" style="justify-content:center;">Let's talk</div>
       <h2 class="section-title">Get in Touch</h2>
-      <p class="contact-sub">Open to collabs, freelance work, ambassador roles,<br>and anything interesting in the crypto / AI space.</p>
+      <p class="contact-sub">Open to collabs, freelance work,<br>and anything interesting in the crypto / AI space.</p>
       <div class="contact-btns">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="https://x.com/sammyXXIV" target="_blank" class="btn btn-outline">X / Twitter</a>
+        <a href="https://x.com/sammyXXIV" target="_blank" class="btn btn-primary">X / Twitter</a>
         <a href="https://github.com/sammy-XXIV" target="_blank" class="btn btn-outline">GitHub</a>
         <a href="https://t.me/sammyXXIV" target="_blank" class="btn btn-outline">Telegram</a>
-        <a href="https://discord.com/users/sammyXXIV" target="_blank" class="btn btn-outline">Discord</a>
       </div>
     </div>
   </section>
 
-  <footer>Made by <span>SAMMY</span> &nbsp;·&nbsp; 2025</footer>
+  <footer>
+    <span class="fx">SAMMY</span>
+    <span class="dot">/</span>
+    <span>Crypto · AI · Web</span>
+    <span class="dot">/</span>
+    <span>Built solo, shipped often</span>
+    <span class="dot">/</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 
 </div>
 
